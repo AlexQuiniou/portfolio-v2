@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+      ██████████████████████████████████████
+    ██▒▒██    ▒▒██  ██    ░░██▓▓██    ▒▒██▓▓██
+  ██▒▒  ▒▒██▒▒██    ░░██░░██▓▓  ▒▒██▒▒██▓▓  ▓▓██
+██▒▒  ░░  ▒▒██        ░░██▓▓      ▒▒██▓▓  ▒▒  ▓▓██
+██████████████████████████████████████████████████
+██▒▒▒▒▒▒▒▒▒▒██        ░░██▓▓▓▓▓▓▓▓▒▒██▓▓▓▓▓▓▓▓▓▓██
+  ██▒▒  ░░▒▒██        ░░██▓▓      ▒▒██▓▓  ▒▒▓▓██
+    ██▒▒  ░░▒▒██      ░░██▓▓    ▒▒██▓▓  ▒▒▓▓██
+      ██▒▒  ▒▒██      ░░██▓▓    ▒▒██▓▓  ▓▓██
+        ██▒▒  ▒▒██    ░░██▓▓  ▒▒██▓▓  ▓▓██
+          ██▒▒▒▒██    ░░██▓▓  ▒▒██▓▓▓▓██
+            ██▒▒▒▒██  ░░██▓▓▒▒██▓▓▓▓██
+              ██▒▒██  ░░██▓▓▒▒██▓▓██
+                ██▒▒██░░██▓▓██▓▓██
+                  ████░░██▓▓████
+                    ██░░██▓▓██
+                      ██████
+
+Tu as découvert le saint gral (https://textart.sh/topic/diamond) ! Voici une récompense ci-dessus 💎
+tu peux t'inspirer, modifier ou carrément copier ... MAIS !!!
+Met moi en favoris ⭐ ... ou si tu as bon coeur partage le lien de mon blog ↗ 😃
+
+Bonne continuation à toi 👋
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- https://stackoverflow.com/a/13706151 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alex Qui ?</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127399294-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127399294-2');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://alexquiniou.github.io/portfolio/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1624651, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        a,
+        p,
+        button {
+            text-decoration: none !important;
+        }
+
+        button img {
+            max-width: 8em;
+        }
+
+        div.card-body.text-nowrap {
+            overflow: auto;
+        }
+
+        #accordionExample {
+            max-width: 25em;
+        }
+
+        footer figure img {
+            width: 2.5em;
+        }
+
+        .alert {
+            display: grid;
+        }
+    </style>
+</head>
+
+<body class="m-3">
+
+    <div class="alert alert-primary alert-dismissible fade show p-3" role="alert">
+        <p>
+            Ce site utilise des cookies provenant de <strong>Google</strong> et <strong>Hotjar</strong> pour fournir ses
+            services et
+            analyser le trafic. Votre adresse IP et votre user-agent, ainsi que des statistiques relatives aux
+            performances
+            et à la sécurité, sont transmis à Google et Hotjar afin d'assurer un service de qualité, de générer des statistiques
+            d'utilisation, et de détecter et de résoudre les problèmes d'abus.
+        </p>
+        <button type="button" class="btn btn-primary pull-right" data-dismiss="alert" aria-label="Close">ok
+            <!-- <span aria-hidden="true">
+                <svg class="bi bi-x-circle-fill text-primary" width="1em" height="1em" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                        clip-rule="evenodd" />
+                </svg>
+            </span> -->
+        </button>
+    </div>
+
+    <h1 class="text-center my-3">Alex Quiniou</h1>
+    <h6 class="text-center figure-caption">1m85 de créativité</h6>
+
+    <div class="accordion mx-auto py-3" id="accordionExample">
+
+        <figure>
+            <img src="media/2019-11-28 21-29-55 samsung SM-G970F 329.jpg" class="rounded img-fluid my-3" alt="">
+            <figcaption class="figure-caption text-center">Et comme vous pouvez le constater la personne qui est au
+                dessus n'est autre que moi 😏</figcaption>
+        </figure>
+
+        <!-- section presentation -->
+
+        <div class="card">
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Pour faire un Alex Quiniou il vous faut ...</p>
+            </button>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul class="m-0">
+                        <li>
+                            Un concentré de curiosité
+                        </li>
+                        <li>
+                            De la bonne humeur
+                        </li>
+                        <li>
+                            Un esprit voyageur
+                        </li>
+                        <li>
+                            De l'experience transdisciplinaire
+                        </li>
+                        <li>
+                            Et un zeste d'humour 😁
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- section logo -->
+
+        <div class="card">
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Logo</p>
+            </button>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#flammes">
+                            <img class="img-responsive" src="media\logo\LOGO - 4 FLAMMES_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="flammes" tabindex="-1" role="dialog" aria-labelledby="flammesTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - 4 FLAMMES_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#arche">
+                            <img class="img-responsive" src="media\logo\LOGO - ARCHE_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="arche" tabindex="-1" role="dialog" aria-labelledby="archeTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - ARCHE_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#comme">
+                            <img class="img-responsive" src="media\logo\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="comme" tabindex="-1" role="dialog" aria-labelledby="commeTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - COMME UNE EVIDENCE_COULEUR.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#finegood">
+                            <img class="img-responsive" src="media\logo\LOGO - ABYX MOVIE V8 O19_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="finegood" tabindex="-1" role="dialog"
+                            aria-labelledby="finegoodTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - ABYX MOVIE V8 O19_COULEUR.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                            data-target="#lanuitdunanard">
+                            <img class="img-responsive" src="media\logo\LOGO - LA NUIT DU NANAR_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="lanuitdunanard" tabindex="-1" role="dialog"
+                            aria-labelledby="lanuitdunanardTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - LA NUIT DU NANAR_COULEUR.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#ofly">
+                            <img class="img-responsive" src="media\logo\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="ofly" tabindex="-1" role="dialog" aria-labelledby="oflyTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#orter">
+                            <img class="img-responsive" src="media\logo\LOGO - ORTER_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="orter" tabindex="-1" role="dialog" aria-labelledby="orterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - ORTER_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#rock">
+                            <img class="img-responsive" src="media\logo\LOGO - ROCK N'FEST_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="rock" tabindex="-1" role="dialog" aria-labelledby="rockTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - ROCK N'FEST_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#status">
+                            <img class="img-responsive" src="media\logo\LOGO - STATUS_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="status" tabindex="-1" role="dialog" aria-labelledby="statusTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - STATUS_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#water">
+                            <img class="img-responsive" src="media\logo\LOGO - WATER GUARD_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="water" tabindex="-1" role="dialog" aria-labelledby="waterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - WATER GUARD_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astuceman">
+                            <img class="img-responsive" src="media\logo\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="astuceman" tabindex="-1" role="dialog"
+                            aria-labelledby="astucemanTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#costar">
+                            <img class="img-responsive" src="media\logo\LOGO - COSTAR INC_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="costar" tabindex="-1" role="dialog" aria-labelledby="costarTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - COSTAR INC_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#doceo">
+                            <img class="img-responsive" src="media\logo\LOGO - DOCEO TUTO_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="doceo" tabindex="-1" role="dialog" aria-labelledby="doceoTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - DOCEO TUTO_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#hospital">
+                            <img class="img-responsive" src="media\logo\LOGO - HOSPITAL_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="hospital" tabindex="-1" role="dialog"
+                            aria-labelledby="hospitalTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - HOSPITAL_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#looping">
+                            <img class="img-responsive" src="media\logo\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="looping" tabindex="-1" role="dialog" aria-labelledby="loopingTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - LOOPING SOCIETY_COULEUR.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#magoo">
+                            <img class="img-responsive" src="media\logo\LOGO - MAGOO O8_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="magoo" tabindex="-1" role="dialog" aria-labelledby="magooTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - MAGOO O8_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#musictime">
+                            <img class="img-responsive" src="media\logo\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="musictime" tabindex="-1" role="dialog"
+                            aria-labelledby="musictimeTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#novae">
+                            <img class="img-responsive" src="media\logo\LOGO - NOVAE_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="novae" tabindex="-1" role="dialog" aria-labelledby="novaeTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - NOVAE_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#solarius">
+                            <img class="img-responsive" src="media\logo\LOGO - SOLARIUS_COULEUR.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="solarius" tabindex="-1" role="dialog"
+                            aria-labelledby="solariusTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\logo\LOGO - SOLARIUS_COULEUR.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez un logo ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section flyer -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Flyer</p>
+            </button>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#noel">
+                            <img class="img-responsive" src="media\flyer\FLYER - NOEL.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="noel" tabindex="-1" role="dialog" aria-labelledby="noelTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\flyer\FLYER - NOEL.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#noel2">
+                            <img class="img-responsive" src="media\flyer\FLYER - NOEL2.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="noel2" tabindex="-1" role="dialog" aria-labelledby="noel2Title"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\flyer\FLYER - NOEL2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez un flyer ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section charte graphique -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="headingFour">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Charte graphique</p>
+            </button>
+
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                            data-target="#cgastuceman">
+                            <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - ASTUCEMAN.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cgastuceman" tabindex="-1" role="dialog"
+                            aria-labelledby="cgastucemanTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\charte\CHARTE GRAPHIQUE - ASTUCEMAN.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cgmagoo">
+                            <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - MAGOO.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cgmagoo" tabindex="-1" role="dialog" aria-labelledby="cgmagooTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\charte\CHARTE GRAPHIQUE - MAGOO.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                            data-target="#cgmusictime">
+                            <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - MUSIC TIME.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cgmusictime" tabindex="-1" role="dialog"
+                            aria-labelledby="cgmusictimeTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\charte\CHARTE GRAPHIQUE - MUSIC TIME.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cgtns">
+                            <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - TNS.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cgtns" tabindex="-1" role="dialog" aria-labelledby="cgtnsTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\charte\CHARTE GRAPHIQUE - TNS.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une charte graphique ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section illustration -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" id="headingFive">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Illustration</p>
+            </button>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#icra">
+                            <img class="img-responsive"
+                                src="media\illustration\ILLUSTRATION - COMMUNE ROUTZENHEIM AUENHEIM_Plan de travail 1.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="icra" tabindex="-1" role="dialog" aria-labelledby="icraTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\illustration\ILLUSTRATION - COMMUNE ROUTZENHEIM AUENHEIM_Plan de travail 1.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#idead">
+                            <img class="img-responsive" src="media\illustration\ILLUSTRATION - DEAD - PHOTOSHOP.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="idead" tabindex="-1" role="dialog" aria-labelledby="ideadTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\illustration\ILLUSTRATION - DEAD - PHOTOSHOP.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                            data-target="#idouaniers">
+                            <img class="img-responsive" src="media\illustration\ILLUSTRATION - LES DOUANIERS.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="idouaniers" tabindex="-1" role="dialog"
+                            aria-labelledby="idouaniersTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\illustration\ILLUSTRATION - LES DOUANIERS.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#imenu">
+                            <img class="img-responsive"
+                                src="media\illustration\ILLUSTRATION - PREFECTURE MENU_Plan de travail 1.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="imenu" tabindex="-1" role="dialog" aria-labelledby="imenuTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\illustration\ILLUSTRATION - PREFECTURE MENU_Plan de travail 1.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#itwinery">
+                            <img class="img-responsive" src="media\illustration\ILLUSTRATION - TWINERY 2.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="itwinery" tabindex="-1" role="dialog"
+                            aria-labelledby="itwineryTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\illustration\ILLUSTRATION - TWINERY 2.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une illustration ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section reseaux sociaux -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" id="headingSix">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Réseaux sociaux</p>
+            </button>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prsrs">
+                            <img class="img-responsive"
+                                src="media\social\POST RESEAU SOCIAL - RENCONTRES SECURITE 1.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="prsrs" tabindex="-1" role="dialog" aria-labelledby="prsrsTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\social\POST RESEAU SOCIAL - RENCONTRES SECURITE 1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prsdrone">
+                            <img class="img-responsive" src="media\social\POST RESEAU SOCIAL - DRONE V3.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="prsdrone" tabindex="-1" role="dialog"
+                            aria-labelledby="prsdroneTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\social\POST RESEAU SOCIAL - DRONE V3.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prskit">
+                            <img class="img-responsive"
+                                src="media\social\POST RESEAU SOCIAL - KIT COMMUNICATION CRISE V3162.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="prskit" tabindex="-1" role="dialog" aria-labelledby="prskitTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\social\POST RESEAU SOCIAL - KIT COMMUNICATION CRISE V3162.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                            data-target="#prspetards">
+                            <img class="img-responsive" src="media\social\POST RESEAU SOCIAL - PETARDS V3.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="prspetards" tabindex="-1" role="dialog"
+                            aria-labelledby="prspetardsTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\social\POST RESEAU SOCIAL - PETARDS V3.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prssp">
+                            <img class="img-responsive"
+                                src="media\social\POST RESEAU SOCIAL - SAINT PATRICK_RESEAU SOCIAL - 16-9 - BAS RHIN.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="prssp" tabindex="-1" role="dialog" aria-labelledby="prsspTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\social\POST RESEAU SOCIAL - SAINT PATRICK_RESEAU SOCIAL - 16-9 - BAS RHIN.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#pbram">
+                            <img class="img-responsive"
+                                src="media\social\Préfecture Bas-Rhin . L'accueil modernisé_Plan de travail 1.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pbram" tabindex="-1" role="dialog" aria-labelledby="pbramTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\social\Préfecture Bas-Rhin . L'accueil modernisé_Plan de travail 1.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une illustration pour votre réseau
+                            social ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section carte de visite -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" id="headingSeven">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Carte de visite</p>
+            </button>
+
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvp">
+                            <img class="img-responsive" src="media\visite\CARTE DE VISITE - PREFECTURE V32.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cvp" tabindex="-1" role="dialog" aria-labelledby="cvpTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\visite\CARTE DE VISITE - PREFECTURE V32.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvp2">
+                            <img class="img-responsive" src="media\visite\CARTE DE VISITE - PREFECTURE2.png" alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cvp2" tabindex="-1" role="dialog" aria-labelledby="cvp2Title"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block"  src="media\visite\CARTE DE VISITE - PREFECTURE2.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvsm">
+                            <img class="img-responsive" src="media\visite\CARTE DE VISITE - STUDINESS MOCKUP 1.png"
+                                alt="">
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cvsm" tabindex="-1" role="dialog" aria-labelledby="cvsmTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center"
+                                role="document">
+                                <div class="modal-content border-0 w-75 h-75">
+                                    <div class="modal-header border-0 d-flex justify-content-center">
+                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
+                                                viewBox="0 0 20 20" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body bg-white rounded-bottom">
+                                        <img class="img-fluid mx-auto d-block" 
+                                            src="media\visite\CARTE DE VISITE - STUDINESS MOCKUP 1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez votre carte de visite ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section site web -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight" id="headingEight">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Site web</p>
+            </button>
+
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <a class="btn bg-danger text-white m-2 p-1" href="https://astuceman.blogspot.com/"
+                            target="_blank">
+                            Astuceman
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Button trigger modal -->
+                        <a class="btn bg-danger text-white m-2 p-1"
+                            href="https://alexquiniou.github.io/bienvenue-a-liepaja/" target="_blank">
+                            Bienvenue à Liepāja
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Button trigger modal -->
+                        <a class="btn bg-danger text-white m-2 p-1" href="http://sound.mplab.lv/" target="_blank">
+                            Sound Days
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez votre site web ?</p>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- section maitrise -->
+
+        <div class="card">
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine" id="headingNine">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Maitrise</p>
+            </button>
+
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                <div class="card-body">
+                    <h3>3D</h3>
+                    <ul>
+                        <li>Daz studio</li>
+                    </ul>
+                    <h3>Traitement image</h3>
+                    <ul>
+                        <li>Adobe
+                            <ul>
+                                <li>Illustrator</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>PAO</h3>
+                    <ul>
+                        <li>Adobe
+                            <ul>
+                                <li>Indesign</li>
+                            </ul>
+                        </li>
+                        <li>Microsoft
+                            <ul>
+                                <li>Publisher</li>
+                            </ul>
+                        </li>
+                        <li>Scribus</li>
+                    </ul>
+                    <h3>Bureautique</h3>
+                    <ul>
+                        <li>Google Office
+                            <ul>
+                                <li>Docs</li>
+                                <li>Forms</li>
+                                <li>Sheets</li>
+                                <li>Slides</li>
+                            </ul>
+                        </li>
+                        <li>Microsoft Office
+                            <ul>
+                                <li>Excel</li>
+                                <li>Outlook</li>
+                                <li>Powerpoint</li>
+                                <li>Word</li>
+                            </ul>
+                        </li>
+                        <li>Libre Office
+                            <ul>
+                                <li>Calc</li>
+                                <li>Impress</li>
+                                <li>Writer</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Vidéo</h3>
+                    <ul>
+                        <li>Adobe
+                            <ul>
+                                <li>Premiere pro</li>
+                                <li>Media encoder</li>
+                            </ul>
+                        </li>
+                        <li>Obs</li>
+                    </ul>
+                    <h3>Dévellopement</h3>
+                    <ul>
+                        <li>Microsoft
+                            <ul>
+                                <li>Visual Studio Code</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Technologie web</h3>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3>Language web</h3>
+                    <ul>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                    </ul>
+                    <h3>Stockage</h3>
+                    <ul>
+                        <li>Ixsystems
+                            <ul>
+                                <li>Freenas</li>
+                            </ul>
+                        </li>
+                        <li>Google
+                            <ul>
+                                <li>Drive</li>
+                            </ul>
+                        </li>
+                        <li>Microsoft
+                            <ul>
+                                <li>Onedrive</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Système d'exploitation</h3>
+                    <ul>
+                        <li>Windows
+                            <ul>
+                                <li>XP</li>
+                                <li>7</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li>Ubuntu</li>
+                        <li>Macos</li>
+                    </ul>
+                    <h3>Communication</h3>
+                    <ul>
+                        <li>Signal</li>
+                        <li>Microsoft
+                            <ul>
+                                <li>Skype</li>
+                            </ul>
+                        </li>
+                        <li>Facebook
+                            <ul>
+                                <li>Messenger</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Atlassian
+                            <ul>
+                                <li>Trello</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- section curriculum vitae -->
+
+        <div class="card">
+
+            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
+                data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen" id="headingTen">
+                <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8" />
+                </svg>
+                <p class="text-dark font-weight-bold m-0 d-inline">Curriculum vitae</p>
+            </button>
+
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                <div class="card-body">
+
+                    <!-- Début Carrousel -->
+                    <div class="card-body text-nowrap">
+
+                        <!-- Button trigger modal -->
+                        <a class="btn bg-danger text-white m-2 p-1"
+                            href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1IvQMXhckGjrb1FTQR05hstairrHiXm7jCcxj2efGxTg&font=Default&lang=fr&initial_zoom=2&height=650"
+                            target="_blank">
+                            CV chronologique
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Button trigger modal -->
+                        <a class="btn bg-danger text-white m-2 p-1"
+                            href="https://uploads.knightlab.com/storymapjs/c34e1b5468427088b9f96edd262a04e5/curiculum-vitae-cv/index.html"
+                            target="_blank">
+                            CV géographique
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <!-- Fin Carrousel -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center py-3">
+        <p>Codé avec ❤ par Alex</p>
+
+        <figure>
+            <img src="media/footer/bootstrap.svg" alt="" class="img-fluid mx-3">
+            <img src="media/footer/vscode.svg" alt="" class="img-fluid mx-3">
+            <img src="media/footer/github.svg" alt="" class="img-fluid mx-3">
+        </figure>
+    </footer>
+
+
+</body>
+
+</html>
