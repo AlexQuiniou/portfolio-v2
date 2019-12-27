@@ -31,6 +31,7 @@ Bonne continuation à toi 👋
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!-- https://stackoverflow.com/a/13706151 -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolio Alex Quiniou">
     <title>Alex Qui ?</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -97,9 +98,10 @@ Bonne continuation à toi 👋
             width: 2.5em;
         }
 
-        .alert {
-            display: grid;
-        }
+        /* .alert,
+        div#flammes div div div button {
+            width: 100%;
+        } */
     </style>
 </head>
 
@@ -107,23 +109,12 @@ Bonne continuation à toi 👋
 
     <div class="alert alert-primary alert-dismissible fade show p-3" role="alert">
         <p>
-            Ce site utilise des cookies provenant de <strong>Google</strong> et <strong>Hotjar</strong> pour fournir ses
-            services et
-            analyser le trafic. Votre adresse IP et votre user-agent, ainsi que des statistiques relatives aux
-            performances
-            et à la sécurité, sont transmis à Google et Hotjar afin d'assurer un service de qualité, de générer des
-            statistiques
-            d'utilisation, de détecter et de résoudre les problèmes d'abus.
+            Ce site utilise des cookies provenant de <strong>Google</strong> et <strong>Hotjar</strong> pour analyser le
+            trafic. Votre adresse IP et votre user-agent, ainsi que des statistiques relatives aux
+            performances, sont transmis à Google et Hotjar afin d'assurer un service de qualité, et de générer des
+            statistiques d'utilisation.
         </p>
-        <button type="button" class="btn btn-primary pull-right" data-dismiss="alert" aria-label="Close">ok
-            <!-- <span aria-hidden="true">
-                <svg class="bi bi-x-circle-fill text-primary" width="1em" height="1em" viewBox="0 0 20 20"
-                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
-                        clip-rule="evenodd" />
-                </svg>
-            </span> -->
+        <button type="button" class="btn btn-primary w-100" data-dismiss="alert" aria-label="Close">ok
         </button>
     </div>
 
@@ -132,12 +123,7 @@ Bonne continuation à toi 👋
 
     <div class="accordion mx-auto py-3" id="accordionExample">
 
-        <figure>
-            <img src="media/2019-11-28 21-29-55 samsung SM-G970F 329.jpg" class="rounded img-fluid my-3 mx-auto d-block"
-                alt="">
-            <figcaption class="figure-caption text-center">Et comme vous pouvez le constater la personne qui est au
-                dessus n'est autre que moi 😏</figcaption>
-        </figure>
+        <img src="media/20191227_134406.jpg" class="rounded img-fluid my-3 mx-auto d-block" alt="">
 
         <!-- section presentation -->
 
@@ -204,20 +190,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - 4 FLAMMES_COULEUR.png" alt="">
+                                        <h6 class="text-center">4 Flammes</h6>
+                                        <p class="figure-caption text-center">Prototype de logo fait en formation DUT
+                                            Métiers du Multimédia et de l’Internet lors d'un challenge intense de 2
+                                            semaines continue</p>
                                     </div>
                                 </div>
                             </div>
@@ -235,20 +227,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - ARCHE_COULEUR.png"
                                             alt="">
+                                        <h6 class="text-center">Arche</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait en formation
+                                            DUT
+                                            Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -266,20 +264,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
+                                        <h6 class="text-center">Comme une évidence</h6>
+                                        <p class="figure-caption text-center">Proposition de logo pour une marque de
+                                            vetement dans le cadre de la formation DUT Métiers du Multimédia et de
+                                            l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,20 +301,40 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ABYX MOVIE V8 O19_COULEUR.png" alt="">
+                                        <h6 class="text-center">ABYX Movie</h6>
+                                        <p class="figure-caption text-center">Refonte du logo pour une chaine
+                                            <a class="badge badge-danger"
+                                                href="https://www.youtube.com/channel/UC_kA2FZQ0Hkt0lfG9Tlv7gA"
+                                                target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -329,20 +353,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - LA NUIT DU NANAR_COULEUR.png" alt="">
+                                        <h6 class="text-center">La nuit du nanard</h6>
+                                        <p class="figure-caption text-center">Création du logo pour un exercice de mise
+                                            en place de festival dans le cadre de la formation DUT Métiers du Multimédia
+                                            et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -360,20 +390,25 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
+                                        <h6 class="text-center">O'Fly</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -391,20 +426,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - ORTER_COULEUR.png"
                                             alt="">
+                                        <h6 class="text-center">ORTER</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre type médical, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -422,20 +463,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ROCK N'FEST_COULEUR.png" alt="">
+                                        <h6 class="text-center">Rock n'fest</h6>
+                                        <p class="figure-caption text-center">Exercice de création d'un logo pour la
+                                            mise en place d'un festival de musique, lors de la formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -453,20 +500,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - STATUS_COULEUR.png" alt="">
+                                        <h6 class="text-center">Status</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -484,20 +537,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - WATER GUARD_COULEUR.png" alt="">
+                                        <h6 class="text-center">Water guard</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -515,20 +574,40 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
+                                        <h6 class="text-center">Astuceman</h6>
+                                        <p class="figure-caption text-center">Amélioration du design du logo pour une
+                                            chaine
+                                            <a class="badge badge-danger" href="https://www.youtube.com/user/alex026007"
+                                                target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -546,20 +625,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - COSTAR INC_COULEUR.png" alt="">
+                                        <h6 class="text-center">Costar .inc</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -577,20 +662,41 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - DOCEO TUTO_COULEUR.png" alt="">
+                                        <h6 class="text-center">Doceo tuto</h6>
+                                        <p class="figure-caption text-center">Création du logo pour une
+                                            chaine
+                                            <a class="badge badge-danger"
+                                                href="https://www.youtube.com/channel/UCqg1BFGULxOZO72ypuYv7Ew"
+                                                target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -608,20 +714,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - HOSPITAL_COULEUR.png" alt="">
+                                        <h6 class="text-center">Hospital</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre type médical, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -639,20 +751,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
+                                        <h6 class="text-center">Looping society</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -670,20 +788,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - MAGOO O8_COULEUR.png" alt="">
+                                        <h6 class="text-center">Magoo</h6>
+                                        <p class="figure-caption text-center">Création d'un logo pour le groupe de
+                                            communication lors des deux semaines du challenge de la rentrée de la
+                                            licence professionelle métiers de la communication</p>
                                     </div>
                                 </div>
                             </div>
@@ -701,20 +825,40 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
+                                        <h6 class="text-center">Music time</h6>
+                                        <p class="figure-caption text-center">Amélioration du logo pour une
+                                            chaine
+                                            <a class="badge badge-danger"
+                                                href="https://www.youtube.com/user/VincenTime0" target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -732,20 +876,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - NOVAE_COULEUR.png"
                                             alt="">
+                                        <h6 class="text-center">Novae</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
@@ -763,27 +913,33 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - SOLARIUS_COULEUR.png" alt="">
+                                        <h6 class="text-center">Solaris</h6>
+                                        <p class="figure-caption text-center">Prototype de logo libre, fait
+                                            en formation
+                                            DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez un logo ?</p>
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez un logo ?</p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -823,20 +979,26 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\flyer\FLYER - NOEL.png"
                                             alt="">
+                                        <h6 class="text-center">Flyer de noel - page recto</h6>
+                                        <p class="figure-caption text-center">Production d'un flyer lors d'un exament de
+                                            cour. Sur la base d'un cas concret en partant d'une feuille blanche avec
+                                            photo, logo et texte fourni seulement, au format brut. En moins de 2h.</p>
                                     </div>
                                 </div>
                             </div>
@@ -854,27 +1016,33 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\flyer\FLYER - NOEL2.png"
                                             alt="">
+                                        <h6 class="text-center">Flyer de noel - page verso</h6>
+                                        <p class="figure-caption text-center">Production d'un flyer lors d'un exament de
+                                            cour. Sur la base d'un cas concret en partant d'une feuille blanche avec
+                                            photo, logo et texte fourni seulement, au format brut. En moins de 2h.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez un flyer ?</p>
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez un flyer ?</p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -915,18 +1083,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - ASTUCEMAN.png" alt="">
                                     </div>
@@ -946,18 +1116,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - MAGOO.png" alt="">
                                     </div>
@@ -978,18 +1150,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - MUSIC TIME.png" alt="">
                                     </div>
@@ -1009,18 +1183,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - TNS.png" alt="">
                                     </div>
@@ -1029,7 +1205,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une charte graphique ?</p>
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez une charte
+                            graphique ?</p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -1071,18 +1248,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - COMMUNE ROUTZENHEIM AUENHEIM_Plan de travail 1.png"
                                             alt="">
@@ -1104,18 +1283,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - DEAD - PHOTOSHOP.png" alt="">
                                     </div>
@@ -1137,18 +1318,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - LES DOUANIERS.png" alt="">
                                     </div>
@@ -1169,18 +1352,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - PREFECTURE MENU_Plan de travail 1.png"
                                             alt="">
@@ -1201,18 +1386,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - TWINERY 2.png" alt="">
                                     </div>
@@ -1221,7 +1408,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une illustration ?</p>
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez une illustration
+                            ?</p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -1262,18 +1450,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - RENCONTRES SECURITE 1.png" alt="">
                                     </div>
@@ -1293,18 +1483,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - DRONE V3.png" alt="">
                                     </div>
@@ -1325,18 +1517,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - KIT COMMUNICATION CRISE V3162.png"
                                             alt="">
@@ -1358,18 +1552,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - PETARDS V3.png" alt="">
                                     </div>
@@ -1391,18 +1587,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - SAINT PATRICK_RESEAU SOCIAL - 16-9 - BAS RHIN.png"
                                             alt="">
@@ -1425,18 +1623,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\Préfecture Bas-Rhin . L'accueil modernisé_Plan de travail 1.png"
                                             alt="">
@@ -1446,7 +1646,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez une illustration pour votre réseau
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez une illustration
+                            pour votre réseau
                             social ?</p>
 
                     </div>
@@ -1487,18 +1688,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - PREFECTURE V32.png" alt="">
                                     </div>
@@ -1518,18 +1721,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - PREFECTURE2.png" alt="">
                                     </div>
@@ -1550,18 +1755,20 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="close m-0 p-0" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
                                             aria-label="Close">
-                                            <svg class="bi bi-x-circle-fill text-danger" width="1em" height="1em"
-                                                viewBox="0 0 20 20" fill="currentColor"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.354 6.646L10 9.293l2.646-2.647a.5.5 0 01.708.708L10.707 10l2.647 2.646a.5.5 0 01-.708.708L10 10.707l-2.646 2.647a.5.5 0 01-.708-.708L9.293 10 6.646 7.354a.5.5 0 11.708-.708z"
+                                                    d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z"
+                                                    clip-rule="evenodd" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
                                                     clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="modal-body bg-white rounded-bottom">
+                                    <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - STUDINESS MOCKUP 1.png" alt="">
                                     </div>
@@ -1570,7 +1777,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez votre carte de visite ?</p>
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez votre carte de
+                            visite ?</p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -1643,7 +1851,23 @@ Bonne continuation à toi 👋
                         </a>
 
                         <!-- Button trigger modal -->
-                        <p class="d-inline-block bg-white m-2 p-1">Vous souhaitez votre site web ?</p>
+                        <a class="btn bg-danger text-white m-2 p-1" href="https://alexquiniou.github.io/portfolio-v1/"
+                            target="_blank">
+                            Portfolio v1
+                            <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
+                                viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <!-- Button trigger modal -->
+                        <p class="d-inline-block bg-white m-2 p-1 text-wrap text-center">Vous souhaitez votre site web ?
+                        </p>
 
                     </div>
                     <!-- Fin Carrousel -->
@@ -1652,7 +1876,7 @@ Bonne continuation à toi 👋
             </div>
         </div>
 
-        <!-- section maitrise -->
+        <!-- section competences -->
 
         <div class="card">
             <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
@@ -1661,7 +1885,7 @@ Bonne continuation à toi 👋
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
                 </svg>
-                <p class="text-dark font-weight-bold m-0 d-inline">Maitrise</p>
+                <p class="text-dark font-weight-bold m-0 d-inline">Compétences</p>
             </button>
 
             <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
@@ -1865,9 +2089,9 @@ Bonne continuation à toi 👋
         <p>Codé avec ❤ par Alex</p>
 
         <figure>
-            <img src="media/footer/bootstrap.svg" alt="" class="img-fluid mx-3">
-            <img src="media/footer/vscode.svg" alt="" class="img-fluid mx-3">
-            <img src="media/footer/github.svg" alt="" class="img-fluid mx-3">
+            <img src="media/svg/bootstrap.svg" alt="" class="img-fluid mx-3">
+            <img src="media/svg/vscode.svg" alt="" class="img-fluid mx-3">
+            <img src="media/svg/github.svg" alt="" class="img-fluid mx-3">
         </figure>
     </footer>
 
