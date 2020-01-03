@@ -91,17 +91,28 @@ Bonne continuation à toi 👋
         }
 
         #accordionExample {
-            max-width: 25em;
+            width: 25em;
         }
 
         footer figure img {
             width: 2.5em;
         }
 
-        /* .alert,
-        div#flammes div div div button {
-            width: 100%;
-        } */
+        .badge {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        @media (prefers-color-scheme: dark) {}
+
+        .card,
+        .card-header {
+            border: 0 !important;
+        }
+
+        .card {
+            overflow: initial !important;
+        }
     </style>
 </head>
 
@@ -114,7 +125,7 @@ Bonne continuation à toi 👋
             performances, sont transmis à Google et Hotjar afin d'assurer un service de qualité, et de générer des
             statistiques d'utilisation.
         </p>
-        <button type="button" class="btn btn-primary w-100" data-dismiss="alert" aria-label="Close">ok
+        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="alert" aria-label="Close">ok
         </button>
     </div>
 
@@ -123,13 +134,14 @@ Bonne continuation à toi 👋
 
     <div class="accordion mx-auto py-3" id="accordionExample">
 
-        <img src="media/20191227_134406.jpg" class="rounded img-fluid my-3 mx-auto d-block" alt="">
+        <img src="media/20191227_134406.jpg" class="rounded img-fluid mb-5 mx-auto d-block" alt="">
 
         <!-- section presentation -->
 
         <div class="card">
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                id="headingOne">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -163,8 +175,9 @@ Bonne continuation à toi 👋
         <!-- section logo -->
 
         <div class="card">
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+                id="headingTwo">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -179,7 +192,8 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#flammes">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#flammes">
                             <img class="img-responsive" src="media\logo\LOGO - 4 FLAMMES_COULEUR.png" alt="">
                         </button>
 
@@ -190,7 +204,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +220,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - 4 FLAMMES_COULEUR.png" alt="">
-                                        <h6 class="text-center">4 Flammes</h6>
+                                        <h6 class="text-center mt-2">4 Flammes</h6>
                                         <p class="figure-caption text-center">Prototype de logo fait en formation DUT
                                             Métiers du Multimédia et de l’Internet lors d'un challenge intense de 2
                                             semaines continue</p>
@@ -216,7 +230,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#arche">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#arche">
                             <img class="img-responsive" src="media\logo\LOGO - ARCHE_COULEUR.png" alt="">
                         </button>
 
@@ -227,7 +242,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +258,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - ARCHE_COULEUR.png"
                                             alt="">
-                                        <h6 class="text-center">Arche</h6>
+                                        <h6 class="text-center mt-2">Arche</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait en formation
                                             DUT
                                             Métiers du Multimédia et de l’Internet</p>
@@ -253,7 +268,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#comme">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#comme">
                             <img class="img-responsive" src="media\logo\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
                         </button>
 
@@ -264,7 +280,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +296,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - COMME UNE EVIDENCE_COULEUR.png" alt="">
-                                        <h6 class="text-center">Comme une évidence</h6>
+                                        <h6 class="text-center mt-2">Comme une évidence</h6>
                                         <p class="figure-caption text-center">Proposition de logo pour une marque de
                                             vetement dans le cadre de la formation DUT Métiers du Multimédia et de
                                             l’Internet</p>
@@ -290,7 +306,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#finegood">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#finegood">
                             <img class="img-responsive" src="media\logo\LOGO - ABYX MOVIE V8 O19_COULEUR.png" alt="">
                         </button>
 
@@ -301,7 +318,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -317,9 +334,9 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ABYX MOVIE V8 O19_COULEUR.png" alt="">
-                                        <h6 class="text-center">ABYX Movie</h6>
+                                        <h6 class="text-center mt-2">ABYX Movie</h6>
                                         <p class="figure-caption text-center">Refonte du logo pour une chaine
-                                            <a class="badge badge-danger"
+                                            <a class="badge badge-danger shadow  text-center align-middle"
                                                 href="https://www.youtube.com/channel/UC_kA2FZQ0Hkt0lfG9Tlv7gA"
                                                 target="_blank">
                                                 YouTube
@@ -341,7 +358,7 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
                             data-target="#lanuitdunanard">
                             <img class="img-responsive" src="media\logo\LOGO - LA NUIT DU NANAR_COULEUR.png" alt="">
                         </button>
@@ -353,7 +370,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -369,7 +386,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - LA NUIT DU NANAR_COULEUR.png" alt="">
-                                        <h6 class="text-center">La nuit du nanard</h6>
+                                        <h6 class="text-center mt-2">La nuit du nanard</h6>
                                         <p class="figure-caption text-center">Création du logo pour un exercice de mise
                                             en place de festival dans le cadre de la formation DUT Métiers du Multimédia
                                             et de l’Internet</p>
@@ -379,7 +396,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#ofly">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#ofly">
                             <img class="img-responsive" src="media\logo\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
                         </button>
 
@@ -390,7 +408,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -406,7 +424,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - O.FLY COMPANY_COULEUR.png" alt="">
-                                        <h6 class="text-center">O'Fly</h6>
+                                        <h6 class="text-center mt-2">O'Fly</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
                                     </div>
@@ -415,7 +433,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#orter">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#orter">
                             <img class="img-responsive" src="media\logo\LOGO - ORTER_COULEUR.png" alt="">
                         </button>
 
@@ -426,7 +445,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -442,7 +461,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - ORTER_COULEUR.png"
                                             alt="">
-                                        <h6 class="text-center">ORTER</h6>
+                                        <h6 class="text-center mt-2">ORTER</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre type médical, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -452,7 +471,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#rock">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#rock">
                             <img class="img-responsive" src="media\logo\LOGO - ROCK N'FEST_COULEUR.png" alt="">
                         </button>
 
@@ -463,7 +483,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -479,7 +499,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ROCK N'FEST_COULEUR.png" alt="">
-                                        <h6 class="text-center">Rock n'fest</h6>
+                                        <h6 class="text-center mt-2">Rock n'fest</h6>
                                         <p class="figure-caption text-center">Exercice de création d'un logo pour la
                                             mise en place d'un festival de musique, lors de la formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -489,7 +509,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#status">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#status">
                             <img class="img-responsive" src="media\logo\LOGO - STATUS_COULEUR.png" alt="">
                         </button>
 
@@ -500,7 +521,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -516,7 +537,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - STATUS_COULEUR.png" alt="">
-                                        <h6 class="text-center">Status</h6>
+                                        <h6 class="text-center mt-2">Status</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -526,7 +547,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#water">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#water">
                             <img class="img-responsive" src="media\logo\LOGO - WATER GUARD_COULEUR.png" alt="">
                         </button>
 
@@ -537,7 +559,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -553,7 +575,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - WATER GUARD_COULEUR.png" alt="">
-                                        <h6 class="text-center">Water guard</h6>
+                                        <h6 class="text-center mt-2">Water guard</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -563,7 +585,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#astuceman">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#astuceman">
                             <img class="img-responsive" src="media\logo\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
                         </button>
 
@@ -574,7 +597,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -590,11 +613,11 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - ASTUCEMAN V8_COULEUR.png" alt="">
-                                        <h6 class="text-center">Astuceman</h6>
+                                        <h6 class="text-center mt-2">Astuceman</h6>
                                         <p class="figure-caption text-center">Amélioration du design du logo pour une
                                             chaine
-                                            <a class="badge badge-danger" href="https://www.youtube.com/user/alex026007"
-                                                target="_blank">
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.youtube.com/user/alex026007" target="_blank">
                                                 YouTube
                                                 <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
                                                     viewBox="0 0 20 20" fill="currentColor"
@@ -614,7 +637,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#costar">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#costar">
                             <img class="img-responsive" src="media\logo\LOGO - COSTAR INC_COULEUR.png" alt="">
                         </button>
 
@@ -625,7 +649,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -641,7 +665,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - COSTAR INC_COULEUR.png" alt="">
-                                        <h6 class="text-center">Costar .inc</h6>
+                                        <h6 class="text-center mt-2">Costar .inc</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -651,7 +675,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#doceo">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#doceo">
                             <img class="img-responsive" src="media\logo\LOGO - DOCEO TUTO_COULEUR.png" alt="">
                         </button>
 
@@ -662,7 +687,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -678,10 +703,10 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - DOCEO TUTO_COULEUR.png" alt="">
-                                        <h6 class="text-center">Doceo tuto</h6>
+                                        <h6 class="text-center mt-2">Doceo tuto</h6>
                                         <p class="figure-caption text-center">Création du logo pour une
                                             chaine
-                                            <a class="badge badge-danger"
+                                            <a class="badge badge-danger shadow  text-center align-middle"
                                                 href="https://www.youtube.com/channel/UCqg1BFGULxOZO72ypuYv7Ew"
                                                 target="_blank">
                                                 YouTube
@@ -703,7 +728,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#hospital">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#hospital">
                             <img class="img-responsive" src="media\logo\LOGO - HOSPITAL_COULEUR.png" alt="">
                         </button>
 
@@ -714,7 +740,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -730,7 +756,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - HOSPITAL_COULEUR.png" alt="">
-                                        <h6 class="text-center">Hospital</h6>
+                                        <h6 class="text-center mt-2">Hospital</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre type médical, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -740,7 +766,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#looping">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#looping">
                             <img class="img-responsive" src="media\logo\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
                         </button>
 
@@ -751,7 +778,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -767,7 +794,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - LOOPING SOCIETY_COULEUR.png" alt="">
-                                        <h6 class="text-center">Looping society</h6>
+                                        <h6 class="text-center mt-2">Looping society</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -777,7 +804,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#magoo">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#magoo">
                             <img class="img-responsive" src="media\logo\LOGO - MAGOO O8_COULEUR.png" alt="">
                         </button>
 
@@ -788,7 +816,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -804,7 +832,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - MAGOO O8_COULEUR.png" alt="">
-                                        <h6 class="text-center">Magoo</h6>
+                                        <h6 class="text-center mt-2">Magoo</h6>
                                         <p class="figure-caption text-center">Création d'un logo pour le groupe de
                                             communication lors des deux semaines du challenge de la rentrée de la
                                             licence professionelle métiers de la communication</p>
@@ -814,7 +842,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#musictime">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#musictime">
                             <img class="img-responsive" src="media\logo\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
                         </button>
 
@@ -825,7 +854,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -841,10 +870,10 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - MUSIC TIME V7_COULEUR.png" alt="">
-                                        <h6 class="text-center">Music time</h6>
+                                        <h6 class="text-center mt-2">Music time</h6>
                                         <p class="figure-caption text-center">Amélioration du logo pour une
                                             chaine
-                                            <a class="badge badge-danger"
+                                            <a class="badge badge-danger shadow  text-center align-middle"
                                                 href="https://www.youtube.com/user/VincenTime0" target="_blank">
                                                 YouTube
                                                 <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
@@ -865,7 +894,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#novae">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#novae">
                             <img class="img-responsive" src="media\logo\LOGO - NOVAE_COULEUR.png" alt="">
                         </button>
 
@@ -876,7 +906,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -892,7 +922,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\logo\LOGO - NOVAE_COULEUR.png"
                                             alt="">
-                                        <h6 class="text-center">Novae</h6>
+                                        <h6 class="text-center mt-2">Novae</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -902,7 +932,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#solarius">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#solarius">
                             <img class="img-responsive" src="media\logo\LOGO - SOLARIUS_COULEUR.png" alt="">
                         </button>
 
@@ -913,7 +944,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -929,7 +960,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\logo\LOGO - SOLARIUS_COULEUR.png" alt="">
-                                        <h6 class="text-center">Solaris</h6>
+                                        <h6 class="text-center mt-2">Solarius</h6>
                                         <p class="figure-caption text-center">Prototype de logo libre, fait
                                             en formation
                                             DUT Métiers du Multimédia et de l’Internet</p>
@@ -951,9 +982,9 @@ Bonne continuation à toi 👋
         <!-- section flyer -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+                id="headingThree">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -968,7 +999,8 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#noel">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#noel">
                             <img class="img-responsive" src="media\flyer\FLYER - NOEL.png" alt="">
                         </button>
 
@@ -979,7 +1011,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -995,7 +1027,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\flyer\FLYER - NOEL.png"
                                             alt="">
-                                        <h6 class="text-center">Flyer de noel - page recto</h6>
+                                        <h6 class="text-center mt-2">Flyer de noel - page recto</h6>
                                         <p class="figure-caption text-center">Production d'un flyer lors d'un exament de
                                             cour. Sur la base d'un cas concret en partant d'une feuille blanche avec
                                             photo, logo et texte fourni seulement, au format brut. En moins de 2h.</p>
@@ -1005,7 +1037,8 @@ Bonne continuation à toi 👋
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#noel2">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#noel2">
                             <img class="img-responsive" src="media\flyer\FLYER - NOEL2.png" alt="">
                         </button>
 
@@ -1016,7 +1049,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1032,7 +1065,7 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block" src="media\flyer\FLYER - NOEL2.png"
                                             alt="">
-                                        <h6 class="text-center">Flyer de noel - page verso</h6>
+                                        <h6 class="text-center mt-2">Flyer de noel - page verso</h6>
                                         <p class="figure-caption text-center">Production d'un flyer lors d'un exament de
                                             cour. Sur la base d'un cas concret en partant d'une feuille blanche avec
                                             photo, logo et texte fourni seulement, au format brut. En moins de 2h.</p>
@@ -1054,9 +1087,9 @@ Bonne continuation à toi 👋
         <!-- section charte graphique -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" id="headingFour">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"
+                id="headingFour">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -1071,7 +1104,7 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
                             data-target="#cgastuceman">
                             <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - ASTUCEMAN.png" alt="">
                         </button>
@@ -1083,7 +1116,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1099,13 +1132,33 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - ASTUCEMAN.png" alt="">
+                                        <h6 class="text-center mt-2">Astuceman</h6>
+                                        <p class="figure-caption text-center">Création d'une charte graphique légere et
+                                            portable (max 1 page recto-verso) pour une
+                                            chaine
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.youtube.com/user/alex026007" target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cgmagoo">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#cgmagoo">
                             <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - MAGOO.png" alt="">
                         </button>
 
@@ -1116,7 +1169,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1132,13 +1185,19 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - MAGOO.png" alt="">
+                                        <h6 class="text-center mt-2">Magoo</h6>
+                                        <p class="figure-caption text-center">Mise en place d'une charte graphique basée
+                                            sur le modele Astuceman pour le groupe de
+                                            communication lors des deux semaines du challenge de la rentrée de la
+                                            licence professionelle métiers de la communication
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
                             data-target="#cgmusictime">
                             <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - MUSIC TIME.png" alt="">
                         </button>
@@ -1150,7 +1209,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1166,13 +1225,34 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - MUSIC TIME.png" alt="">
+                                        <h6 class="text-center mt-2">Music time</h6>
+                                        <p class="figure-caption text-center">Création d'une charte graphique sur la
+                                            meme base que celle d'Astuceman
+                                            pour une
+                                            chaine
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.youtube.com/user/VincenTime0" target="_blank">
+                                                YouTube
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cgtns">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#cgtns">
                             <img class="img-responsive" src="media\charte\CHARTE GRAPHIQUE - TNS.png" alt="">
                         </button>
 
@@ -1183,7 +1263,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1199,6 +1279,26 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\charte\CHARTE GRAPHIQUE - TNS.png" alt="">
+                                        <h6 class="text-center mt-2">TNS</h6>
+                                        <p class="figure-caption text-center">Proposition de mise en place d'une charte
+                                            graphique pour le
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.tns.fr/" target="_blank">
+                                                TNS
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            spécifique pour le média YouTube, lors des deux semaines du challenge de la
+                                            rentrée de la licence professionelle métiers de la communication
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1218,9 +1318,9 @@ Bonne continuation à toi 👋
         <!-- section illustration -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" id="headingFive">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"
+                id="headingFive">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -1235,7 +1335,8 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#icra">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#icra">
                             <img class="img-responsive"
                                 src="media\illustration\ILLUSTRATION - COMMUNE ROUTZENHEIM AUENHEIM_Plan de travail 1.png"
                                 alt="">
@@ -1248,7 +1349,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1265,13 +1366,19 @@ Bonne continuation à toi 👋
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - COMMUNE ROUTZENHEIM AUENHEIM_Plan de travail 1.png"
                                             alt="">
+                                        <h6 class="text-center mt-2">Fusion de commune</h6>
+                                        <p class="figure-caption text-center">Création d'un carton d'illustration pour
+                                            signaler la fusion des deux communes lors de mon apprentissage à la
+                                            préfecture de Strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#idead">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#idead">
                             <img class="img-responsive" src="media\illustration\ILLUSTRATION - DEAD - PHOTOSHOP.png"
                                 alt="">
                         </button>
@@ -1283,7 +1390,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1299,13 +1406,17 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - DEAD - PHOTOSHOP.png" alt="">
+                                        <h6 class="text-center mt-2">Dead</h6>
+                                        <p class="figure-caption text-center">Reproduction d'une jaquette de jeux vidéo
+                                            (Dead Space) en utilisant Illustrator et Photoshop
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
                             data-target="#idouaniers">
                             <img class="img-responsive" src="media\illustration\ILLUSTRATION - LES DOUANIERS.png"
                                 alt="">
@@ -1318,7 +1429,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1334,13 +1445,20 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - LES DOUANIERS.png" alt="">
+                                        <h6 class="text-center mt-2">Dead</h6>
+                                        <p class="figure-caption text-center">Création d'une illustration pour la
+                                            nouvelle les douaniers, fesant partie du recueil de nouvelles Lettres de mon
+                                            moulin, lors de la deuxieme année Métiers du Multimédia et de
+                                            l’Internet
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#imenu">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#imenu">
                             <img class="img-responsive"
                                 src="media\illustration\ILLUSTRATION - PREFECTURE MENU_Plan de travail 1.png" alt="">
                         </button>
@@ -1352,7 +1470,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1369,13 +1487,19 @@ Bonne continuation à toi 👋
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - PREFECTURE MENU_Plan de travail 1.png"
                                             alt="">
+                                        <h6 class="text-center mt-2">Carte du menu</h6>
+                                        <p class="figure-caption text-center">Création d'une illustration au format
+                                            dépliant, pour
+                                            accompagner la carte du menu lorsque le prefet reçoit des invités
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#itwinery">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#itwinery">
                             <img class="img-responsive" src="media\illustration\ILLUSTRATION - TWINERY 2.png" alt="">
                         </button>
 
@@ -1386,7 +1510,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1402,6 +1526,24 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\illustration\ILLUSTRATION - TWINERY 2.png" alt="">
+                                        <h6 class="text-center mt-2">Twinery</h6>
+                                        <p class="figure-caption text-center">Création d'une illustration accompagnant
+                                            une histoire interactive utilisant l'outil web
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://twinery.org/" target="_blank">
+                                                twinery
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1421,9 +1563,9 @@ Bonne continuation à toi 👋
         <!-- section reseaux sociaux -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" id="headingSix">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"
+                id="headingSix">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -1438,7 +1580,8 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prsrs">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#prsrs">
                             <img class="img-responsive"
                                 src="media\social\POST RESEAU SOCIAL - RENCONTRES SECURITE 1.png" alt="">
                         </button>
@@ -1450,7 +1593,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1466,13 +1609,34 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - RENCONTRES SECURITE 1.png" alt="">
+                                        <h6 class="text-center mt-2">Rencontres de la sécurité</h6>
+                                        <p class="figure-caption text-center">Création de plusieurs illustrations qui
+                                            ont étés utilisées pour créer une
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.facebook.com/PrefetGrandEstBasRhin/videos/1910156699280424/"
+                                                target="_blank">
+                                                vidéo diaporama
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            présentant la journée de la rencontre avec la sécurité à Strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prsdrone">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#prsdrone">
                             <img class="img-responsive" src="media\social\POST RESEAU SOCIAL - DRONE V3.png" alt="">
                         </button>
 
@@ -1483,7 +1647,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1499,13 +1663,19 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - DRONE V3.png" alt="">
+                                        <h6 class="text-center mt-2">Prévention drones</h6>
+                                        <p class="figure-caption text-center">Création d'une suite d'illustration pour
+                                            informer les habitants de strasbourg sur la bonne façon d'utiliser les
+                                            drones à strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prskit">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#prskit">
                             <img class="img-responsive"
                                 src="media\social\POST RESEAU SOCIAL - KIT COMMUNICATION CRISE V3162.png" alt="">
                         </button>
@@ -1517,7 +1687,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1534,13 +1704,51 @@ Bonne continuation à toi 👋
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - KIT COMMUNICATION CRISE V3162.png"
                                             alt="">
+                                        <h6 class="text-center mt-2">Kit de communication de crise</h6>
+                                        <p class="figure-caption text-center">Un visuel fesant partie d'un projet
+                                            important comprenant 300+ illustrations dépaignant touts les cas de figures
+                                            de crises possibles dans le bas-rhin. Elles sont utilisées pour communiquer
+                                            vers la population via les site web,
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://twitter.com/Prefet67/status/1163026525844905984"
+                                                target="_blank">
+                                                twitter
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            et
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://www.facebook.com/PrefetGrandEstBasRhin/photos/a.289509761257293/1234781423396784/"
+                                                target="_blank">
+                                                facebook
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>. Ces illustrations
+                                            sont accompagnées d'un document d'instructions de 50+ pages.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal"
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
                             data-target="#prspetards">
                             <img class="img-responsive" src="media\social\POST RESEAU SOCIAL - PETARDS V3.png" alt="">
                         </button>
@@ -1552,7 +1760,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1568,13 +1776,34 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - PETARDS V3.png" alt="">
+                                        <h6 class="text-center mt-2">Attention aux pétards</h6>
+                                        <p class="figure-caption text-center">Suite de visuels de prévention à
+                                            destination de
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://twitter.com/Prefet67/status/1210240405201133568"
+                                                target="_blank">
+                                                twitter
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            et facebook
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#prssp">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#prssp">
                             <img class="img-responsive"
                                 src="media\social\POST RESEAU SOCIAL - SAINT PATRICK_RESEAU SOCIAL - 16-9 - BAS RHIN.png"
                                 alt="">
@@ -1587,7 +1816,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1604,13 +1833,34 @@ Bonne continuation à toi 👋
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\POST RESEAU SOCIAL - SAINT PATRICK_RESEAU SOCIAL - 16-9 - BAS RHIN.png"
                                             alt="">
+                                        <h6 class="text-center mt-2">Alcool au volant</h6>
+                                        <p class="figure-caption text-center">Visuel pour la prévention de l'alcool au
+                                            volant pour les réseaux sociaux comme
+                                            <a class="badge badge-danger shadow  text-center align-middle"
+                                                href="https://twitter.com/Prefet67/status/1107297604394733568"
+                                                target="_blank">
+                                                twitter
+                                                <svg class="bi bi-box-arrow-up-right" width="1em" height="1em"
+                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 15A1.5 1.5 0 005 16.5h8a1.5 1.5 0 001.5-1.5v-4a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h4a.5.5 0 000-1H5A1.5 1.5 0 003.5 7v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V4.5H11a.5.5 0 01-.5-.5z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16.354 3.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </a>
+                                            et facebook
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#pbram">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#pbram">
                             <img class="img-responsive"
                                 src="media\social\Préfecture Bas-Rhin . L'accueil modernisé_Plan de travail 1.png"
                                 alt="">
@@ -1623,7 +1873,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1640,6 +1890,10 @@ Bonne continuation à toi 👋
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\social\Préfecture Bas-Rhin . L'accueil modernisé_Plan de travail 1.png"
                                             alt="">
+                                        <h6 class="text-center mt-2">Nouvel accueil usagers</h6>
+                                        <p class="figure-caption text-center">Miniature pour la vidéo de présentation de
+                                            l'accueil rénové de la préfecture de Strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1660,9 +1914,9 @@ Bonne continuation à toi 👋
         <!-- section carte de visite -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" id="headingSeven">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"
+                id="headingSeven">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -1677,7 +1931,8 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvp">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#cvp">
                             <img class="img-responsive" src="media\visite\CARTE DE VISITE - PREFECTURE V32.png" alt="">
                         </button>
 
@@ -1688,7 +1943,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1704,13 +1959,18 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - PREFECTURE V32.png" alt="">
+                                        <h6 class="text-center mt-2">Prototype carte de visite</h6>
+                                        <p class="figure-caption text-center">Prototype crée à la demande du second en
+                                            chef du bureau de communication de la prefecture de strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvp2">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#cvp2">
                             <img class="img-responsive" src="media\visite\CARTE DE VISITE - PREFECTURE2.png" alt="">
                         </button>
 
@@ -1721,7 +1981,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1737,13 +1997,18 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - PREFECTURE2.png" alt="">
+                                        <h6 class="text-center mt-2">Carte de visite du bureau de communication</h6>
+                                        <p class="figure-caption text-center">Carte de visite crée à la demande du chef
+                                            du bureau de communication de la prefecture de strasbourg
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn bg-white m-2 p-1" data-toggle="modal" data-target="#cvsm">
+                        <button type="button" class="btn bg-white m-2 p-1 shadow rounded" data-toggle="modal"
+                            data-target="#cvsm">
                             <img class="img-responsive" src="media\visite\CARTE DE VISITE - STUDINESS MOCKUP 1.png"
                                 alt="">
                         </button>
@@ -1755,7 +2020,7 @@ Bonne continuation à toi 👋
                                 role="document">
                                 <div class="modal-content border-0 w-75 h-75">
                                     <div class="modal-header border-0 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary w-100" data-dismiss="modal"
+                                        <button type="button" class="btn btn-primary w-100 shadow" data-dismiss="modal"
                                             aria-label="Close">
                                             <svg class="bi bi-x" width="1.5em" height="1.5em" viewBox="0 0 20 20"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1771,6 +2036,10 @@ Bonne continuation à toi 👋
                                     <div class="modal-body bg-white rounded-bottom text-wrap">
                                         <img class="img-fluid mx-auto d-block"
                                             src="media\visite\CARTE DE VISITE - STUDINESS MOCKUP 1.png" alt="">
+                                        <h6 class="text-center mt-2">Carte de visite projet studiness</h6>
+                                        <p class="figure-caption text-center">Carte de visite crée pour le projet de fin
+                                            de formation DUT Métiers du Multimédia et de l’Internet
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1790,9 +2059,9 @@ Bonne continuation à toi 👋
         <!-- section site web -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight" id="headingEight">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"
+                id="headingEight">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -1807,7 +2076,7 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1" href="https://astuceman.blogspot.com/"
+                        <a class="btn bg-danger text-white m-2 p-1 shadow" href="https://astuceman.blogspot.com/"
                             target="_blank">
                             Astuceman
                             <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
@@ -1822,7 +2091,7 @@ Bonne continuation à toi 👋
                         </a>
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1"
+                        <a class="btn bg-danger text-white m-2 p-1 shadow"
                             href="https://alexquiniou.github.io/bienvenue-a-liepaja/" target="_blank">
                             Bienvenue à Liepāja
                             <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
@@ -1837,7 +2106,8 @@ Bonne continuation à toi 👋
                         </a>
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1" href="http://sound.mplab.lv/" target="_blank">
+                        <a class="btn bg-danger text-white m-2 p-1 shadow" href="http://sound.mplab.lv/"
+                            target="_blank">
                             Sound Days
                             <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
                                 viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1851,8 +2121,8 @@ Bonne continuation à toi 👋
                         </a>
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1" href="https://alexquiniou.github.io/portfolio-v1/"
-                            target="_blank">
+                        <a class="btn bg-danger text-white m-2 p-1 shadow"
+                            href="https://alexquiniou.github.io/portfolio-v1/" target="_blank">
                             Portfolio v1
                             <svg class="bi bi-box-arrow-up-right text-white" width="1em" height="1em"
                                 viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1879,8 +2149,9 @@ Bonne continuation à toi 👋
         <!-- section competences -->
 
         <div class="card">
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine" id="headingNine">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine"
+                id="headingNine">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -2028,9 +2299,9 @@ Bonne continuation à toi 👋
         <!-- section curriculum vitae -->
 
         <div class="card">
-
-            <button class="card-header btn btn-link bg-white" type="button" data-toggle="collapse"
-                data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen" id="headingTen">
+            <button class="card-header btn btn-link bg-white shadow rounded" type="button"
+                data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen"
+                id="headingTen">
                 <svg class="bi bi-list text-danger d-inline mr-2" width="6" height="6" viewBox="0 0 20 20"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10" r="8" />
@@ -2045,7 +2316,7 @@ Bonne continuation à toi 👋
                     <div class="card-body text-nowrap">
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1"
+                        <a class="btn bg-danger text-white m-2 p-1 shadow"
                             href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1IvQMXhckGjrb1FTQR05hstairrHiXm7jCcxj2efGxTg&font=Default&lang=fr&initial_zoom=2&height=650"
                             target="_blank">
                             CV chronologique
@@ -2061,7 +2332,7 @@ Bonne continuation à toi 👋
                         </a>
 
                         <!-- Button trigger modal -->
-                        <a class="btn bg-danger text-white m-2 p-1"
+                        <a class="btn bg-danger text-white m-2 p-1 shadow"
                             href="https://uploads.knightlab.com/storymapjs/c34e1b5468427088b9f96edd262a04e5/curiculum-vitae-cv/index.html"
                             target="_blank">
                             CV géographique
